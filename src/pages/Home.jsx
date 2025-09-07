@@ -1,10 +1,8 @@
 import React from "react";
-import Input from "./Input";
 import MainInput from "../components/MainInput";
 import EditLiElement from "../components/EditLiElement";
 import LiElement from "../components/LiElement";
 import Button from "../components/Button";
-import LocalSt from "../components/LocalSt";
 import { useAppContext } from "../context/useAppContext";
 
 const Home = () => {
@@ -12,9 +10,7 @@ const Home = () => {
 
   return (
     <main className="h-screen flex justify-center items-center gap-6">
-      <Input />
       <MainInput />
-      <LocalSt />
       {state.todos.length > 0 && (
         <ul>
           {state.todos.map((todo) =>

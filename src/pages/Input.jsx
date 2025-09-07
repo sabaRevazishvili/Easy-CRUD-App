@@ -44,7 +44,7 @@ const Input = () => {
     );
   };
   return (
-    <>
+    <main className="h-screen flex justify-center items-center gap-6">
       <form
         onSubmit={addHandler}
         className="flex flex-col items-center justify-center gap-5 border border-blue-950"
@@ -117,7 +117,7 @@ const Input = () => {
           )}
         </ul>
       )}
-    </>
+    </main>
   );
 };
 
